@@ -30,7 +30,9 @@ public class Parser {
 
                 feedItems.add(item);
 
-            } catch (Exception ex){}
+            } catch (Exception ex){
+                ex.printStackTrace();
+            }
         }
         return feedItems;
     }
