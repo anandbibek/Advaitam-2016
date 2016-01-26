@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+//modify this version numbers according to own system
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
