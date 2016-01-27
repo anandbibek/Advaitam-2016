@@ -9,29 +9,29 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-        android:padding="@dimen/card_margin"
-        android:text="Details"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:padding="@dimen/card_margin"
+            android:text="Details"
+            />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#ddd"/>
 
-    <TextView
-        android:id="@+id/details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/card_margin"
-        android:lineSpacingMultiplier="1.15"
-        android:autoLink="all"
-        android:textColorLink="@color/colorAccent"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        />
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:lineSpacingMultiplier="1.15"
+            android:autoLink="all"
+            android:textColorLink="@color/colorAccent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
 
     </LinearLayout>
 
