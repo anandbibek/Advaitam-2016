@@ -27,7 +27,16 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    public void nextPage(View view){
+    public void openEvents(View view){
+        startActivity(new Intent(this, ListActivity.class).putExtra("URL",MyConstants.eventsUrl));
+    }
+    public void openWorkshops(View view){
+        startActivity(new Intent(this, ListActivity.class).putExtra("URL",MyConstants.workshopsUrl));
+    }
+    public void openProNight(View view){
+        startActivity(new Intent(this, ListActivity.class));
+    }
+    public void openAbouts(View view){
         startActivity(new Intent(this, ListActivity.class));
     }
 

@@ -6,5 +6,5 @@ package in.ac.nita.advaitam;
 public class MyConstants {
 
     public static final String eventsUrl = "https://raw.githubusercontent.com/anirbanbhowmik94/Advaitam-2016/master/events.txt";
-
+    public static final String workshopsUrl = "https://raw.githubusercontent.com/anirbanbhowmik94/Advaitam-2016/master/workshops.txt";
 }

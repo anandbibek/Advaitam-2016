@@ -50,25 +50,8 @@ public class ListActivity extends AppCompatActivity {
 
     }
 
-//    private void insertDummyData() {
-//        FeedItem f1 = new FeedItem();
-//        f1.title = "Event one heading";
-//        f1.thumbnail = "http://developer.android.com/images/cards/android-wear_2x.png";
-//        feedItems.add(f1);
-//
-//        FeedItem f2 = new FeedItem();
-//        f2.title = "Event two heading";
-//        f2.thumbnail = "http://developer.android.com/images/cards/android-tv_2x.png";
-//        feedItems.add(f2);
-//
-//        FeedItem f3 = new FeedItem();
-//        f3.title = "Event three heading";
-//        f3.thumbnail = "http://developer.android.com/images/cards/android-auto_2x.png";
-//        feedItems.add(f3);
-//    }
-
     private void loadData(){
-        String url = MyConstants.eventsUrl;
+        String url = getIntent().getStringExtra("URL");
         StringRequest request = new StringRequest(url,
                 new Response.Listener<String>() {
                     @Override

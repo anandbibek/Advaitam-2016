@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:onClick="nextPage">
+        android:onClick="openEvents">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_toRightOf="@+id/img1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:text="Events"/>
             <TextView
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                android:text="A short description of type of Events"/>
+                android:text="Various competitions and events to bring out the creativity inside you"/>
 
         </RelativeLayout>
 
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:onClick="nextPage">
+        android:onClick="openWorkshops">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                 android:layout_toRightOf="@+id/img2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:text="Workshops"/>
             <TextView
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                android:text="A short description of type of workshops"/>
+                android:text="Opportunities to learn and innovate"/>
 
         </RelativeLayout>
 
@@ -92,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:onClick="nextPage">
+        android:onClick="openProNight">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                 android:layout_toRightOf="@+id/img3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:text="Pro Night"/>
             <TextView
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                android:text="A short description of type of pro night"/>
+                android:text="A night with the pro celebrities"/>
 
         </RelativeLayout>
 
@@ -131,7 +131,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:onClick="nextPage">
+        android:onClick="openAbouts">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -149,7 +149,7 @@
                 android:layout_toRightOf="@+id/img4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:text="About Advaitam"/>
             <TextView
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                android:text="A short description of type of pro night"/>
+                android:text="The people behind Advaitam 2016"/>
 
         </RelativeLayout>
 
