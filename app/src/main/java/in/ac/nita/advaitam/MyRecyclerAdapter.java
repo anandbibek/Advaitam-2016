@@ -39,6 +39,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Cu
 
         //Setting text view title
         customViewHolder.textView.setText(Html.fromHtml(feedItem.title));
+        customViewHolder.descView.setText(Html.fromHtml(feedItem.smallDesc));
     }
 
     @Override
@@ -48,12 +49,13 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Cu
 
     public class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         protected ImageView imageView;
-        protected TextView textView;
+        protected TextView textView, descView;
 
         public CustomViewHolder(View view) {
             super(view);
             this.imageView = (ImageView) view.findViewById(R.id.thumbnail);
             this.textView = (TextView) view.findViewById(R.id.title);
+            this.descView = (TextView) view.findViewById(R.id.desc);
             view.setOnClickListener(this);
         }
 
