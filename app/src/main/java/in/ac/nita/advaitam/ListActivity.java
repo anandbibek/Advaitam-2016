@@ -48,8 +48,10 @@ public class ListActivity extends AppCompatActivity {
             }
         });
         feedItems = new ArrayList<>();
-        if(savedInstanceState==null)
+        if(savedInstanceState==null) {
             loadData();
+            getSupportActionBar().setTitle(getIntent().getStringExtra("TITLE"));
+        }
 
     }
 

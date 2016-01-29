@@ -28,16 +28,22 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openEvents(View view){
-        startActivity(new Intent(this, ListActivity.class).putExtra("URL",MyConstants.eventsUrl));
+        startActivity(new Intent(this, ListActivity.class)
+                .putExtra("URL",MyConstants.eventsUrl)
+                .putExtra("TITLE","Events"));
     }
     public void openWorkshops(View view){
-        startActivity(new Intent(this, ListActivity.class).putExtra("URL",MyConstants.workshopsUrl));
+        startActivity(new Intent(this, ListActivity.class)
+                .putExtra("URL", MyConstants.workshopsUrl)
+                .putExtra("TITLE", "Workshops"));
     }
     public void openProNight(View view){
-        startActivity(new Intent(this, ListActivity.class));
+        startActivity(new Intent(this, ListActivity.class)
+                .putExtra("TITLE","Pro Night"));
     }
     public void openAbouts(View view){
-        startActivity(new Intent(this, ListActivity.class));
+        startActivity(new Intent(this, ListActivity.class)
+                .putExtra("TITLE","About"));
     }
 
 }
