@@ -21,7 +21,7 @@ public class DetailsActivity extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     CoordinatorLayout rootLayout;
     ImageView headerImage;
-    TextView detailView,contactView;
+    TextView detailView,contactView, titleView;
     AppCompatButton linkButton;
     FloatingActionButton fabBtn;
 
@@ -55,9 +55,14 @@ public class DetailsActivity extends AppCompatActivity {
         detailView = (TextView)findViewById(R.id.details);
         contactView = (TextView)findViewById(R.id.contact_details);
         linkButton = (AppCompatButton)findViewById(R.id.link_button);
+        titleView = (TextView)findViewById(R.id.titleView);
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
-        collapsingToolbarLayout.setTitle(getIntent().getStringExtra("EVENT_TITLE"));
-        Picasso.with(this).load(getIntent().getStringExtra("IMG_URL")).into(headerImage);
+        collapsingToolbarLayout.setTitle(" ");
+        titleView.setText(getIntent().getStringExtra("EVENT_TITLE"));
+        Picasso.with(this)
+                .load(getIntent().getStringExtra("IMG_URL"))
+                .placeholder(R.drawable.placeholder)
+                .into(headerImage);
         detailView.setText(getIntent().getStringExtra("SMALL_DESC"));
         contactView.setText(getIntent().getStringExtra("CONTACT"));
         linkButton.setOnClickListener(new View.OnClickListener() {
