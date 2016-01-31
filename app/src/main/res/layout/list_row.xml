@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:layout_margin="8dp">
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -11,21 +14,21 @@
 
         <ImageView
             android:id="@+id/thumbnail"
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:layout_marginRight="12dp"/>
 
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/thumbnail"
             android:lineSpacingMultiplier="1.15"
-            android:padding="16dp"
             tools:text="This is placeholder text"
+            android:layout_marginTop="12dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textSize="20sp"/>
 
@@ -37,7 +40,8 @@
             android:layout_toRightOf="@+id/thumbnail"
             android:layout_below="@+id/title"
             android:lineSpacingMultiplier="1.15"
-            android:padding="16dp"
+            android:layout_marginTop="4dp"
+            tools:text="Description text"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
     </RelativeLayout>

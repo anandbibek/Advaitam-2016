@@ -44,6 +44,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="in.ac.nita.advaitam.ListActivity" />
         </activity>
+
+        <activity
+            android:name=".About"
+            android:label="About"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.nita.advaitam.HomeActivity" />
+        </activity>
     </application>
 
 </manifest>

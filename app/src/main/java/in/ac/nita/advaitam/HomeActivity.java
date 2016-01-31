@@ -42,8 +42,8 @@ public class HomeActivity extends AppCompatActivity {
                 .putExtra("TITLE","Pro Night"));
     }
     public void openAbouts(View view){
-        startActivity(new Intent(this, ListActivity.class)
-                .putExtra("TITLE","About"));
+        startActivity(new Intent(this, About.class)
+                .putExtra("TITLE", "About"));
     }
 
 }

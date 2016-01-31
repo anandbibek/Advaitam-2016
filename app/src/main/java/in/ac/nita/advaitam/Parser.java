@@ -22,12 +22,12 @@ public class Parser {
                 FeedItem item = new FeedItem();
 
                 item.title = details[0];
-                item.smallDesc = "This is placeholder small description";
-                item.desc = details[1];
-                item.contact = details[2];
-                item.link = details[3];
-                item.backdrop = details[4];
+                item.smallDesc = details[1];
+                item.desc = details[2];
+                item.contact = details[3];
+                item.link = details[4];
                 item.thumbnail = details[5];
+                item.backdrop = details[6];
 
                 feedItems.add(item);
 
