@@ -3,4 +3,40 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color0">#e51c23</color>
+    <color name="color1">#e91e63</color>
+    <color name="color2">#9c27b0</color>
+    <color name="color3">#673ab7</color>
+    <color name="color4">#00bcd4</color>
+    <color name="color5">#03a9f4</color>
+    <color name="color6">#5677fc</color>
+    <color name="color7">#3f51b5</color>
+    <color name="color8">#009688</color>
+    <color name="color9">#259b24</color>
+    <color name="color10">#8bc34a</color>
+    <color name="color11">#cddc39</color>
+    <color name="color12">#ff5722</color>
+    <color name="color13">#ff9800</color>
+    <color name="color14">#ffc107</color>
+    <color name="color15">#795548</color>
+
+    <array name="rainbow">
+        <item>@color/color0</item>
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+        <item>@color/color6</item>
+        <item>@color/color7</item>
+        <item>@color/color8</item>
+        <item>@color/color9</item>
+        <item>@color/color10</item>
+        <item>@color/color12</item>
+        <item>@color/color13</item>
+        <item>@color/color15</item>
+    </array>
+
 </resources>

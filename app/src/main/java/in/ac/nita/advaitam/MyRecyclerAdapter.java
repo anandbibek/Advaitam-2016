@@ -2,6 +2,7 @@ package in.ac.nita.advaitam;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -10,17 +11,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
 import java.util.List;
+import java.util.Random;
 
 public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.CustomViewHolder> {
     private List<FeedItem> feedItemList;
+    int[] colorArray;
     private Context mContext;
 
     public MyRecyclerAdapter(Context context, List<FeedItem> feedItemList) {
         this.feedItemList = feedItemList;
         this.mContext = context;
+        colorArray = mContext.getResources().getIntArray(R.array.rainbow);
     }
 
     @Override
@@ -34,12 +36,15 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Cu
         FeedItem feedItem = feedItemList.get(i);
 
         //Download image using picasso library
-        Picasso.with(mContext).load(feedItem.thumbnail)
-                .into(customViewHolder.imageView);
+        //Picasso.with(mContext).load(feedItem.thumbnail)
+        //        .into(customViewHolder.imageView);
+        int randomStr = colorArray[new Random().nextInt(colorArray.length)];
+        customViewHolder.imageView.setBackgroundDrawable(new ColorDrawable(randomStr));
 
         //Setting text view title
         customViewHolder.textView.setText(Html.fromHtml(feedItem.title));
         customViewHolder.descView.setText(Html.fromHtml(feedItem.smallDesc));
+        customViewHolder.thumbText.setText(feedItem.title.charAt(0)+"");
     }
 
     @Override
@@ -49,12 +54,13 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Cu
 
     public class CustomViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         protected ImageView imageView;
-        protected TextView textView, descView;
+        protected TextView textView, descView, thumbText;
 
         public CustomViewHolder(View view) {
             super(view);
             this.imageView = (ImageView) view.findViewById(R.id.thumbnail);
             this.textView = (TextView) view.findViewById(R.id.title);
+            this.thumbText = (TextView) view.findViewById(R.id.thumbText);
             this.descView = (TextView) view.findViewById(R.id.desc);
             view.setOnClickListener(this);
         }
