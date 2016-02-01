@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.Toolbar;
@@ -23,7 +22,6 @@ public class DetailsActivity extends AppCompatActivity {
     ImageView headerImage;
     TextView detailView,contactView, titleView;
     AppCompatButton linkButton;
-    FloatingActionButton fabBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +41,6 @@ public class DetailsActivity extends AppCompatActivity {
     private void initInstances() {
 
         rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
-        fabBtn = (FloatingActionButton) findViewById(R.id.fab);
-        fabBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         headerImage = (ImageView)findViewById(R.id.headerImage);
         detailView = (TextView)findViewById(R.id.details);
@@ -71,5 +62,13 @@ public class DetailsActivity extends AppCompatActivity {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getIntent().getStringExtra("LINK"))));
             }
         });
+    }
+
+    public void share(View view){
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "I'm attending " + titleView.getText() + " in Advaitam 2016 at NIT Agartala. Know more http://advaitam.org.in/");
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
     }
 }

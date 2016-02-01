@@ -5,7 +5,8 @@
     android:layout_height="80dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     >
 
     <RelativeLayout
@@ -43,11 +44,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/thumbnail"
-            android:lineSpacingMultiplier="1.15"
             tools:text="This is placeholder text"
             android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="20sp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/desc"
@@ -58,6 +59,7 @@
             android:layout_below="@+id/title"
             android:lineSpacingMultiplier="1.15"
             android:layout_marginTop="4dp"
+            android:layout_marginRight="12dp"
             tools:text="Description text"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
