@@ -43,10 +43,10 @@ public class ListActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         feedItems = new ArrayList<>();
         preferences = getSharedPreferences(getIntent().getStringExtra("TITLE"),MODE_PRIVATE);
-        if(savedInstanceState==null) {
+        //if(savedInstanceState==null) {
             loadData();
             getSupportActionBar().setTitle(getIntent().getStringExtra("TITLE"));
-        }
+        //}
 
     }
 
