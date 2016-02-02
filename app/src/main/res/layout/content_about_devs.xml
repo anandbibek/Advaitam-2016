@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
             android:padding="@dimen/card_margin"
-            android:text="Coders and designers"
+            android:text="People behind this app"
             android:lineSpacingMultiplier="1.15"
             android:textSize="18sp"
             android:fontFamily="sans-serif-light"
