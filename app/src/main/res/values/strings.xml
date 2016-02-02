@@ -10,4 +10,5 @@
     <string name="about_devs">Lead developers : \nAnanda Bibek Ray\nAnirban Bhowmik
         \n\nWinter Internship 2016 participants : \nAayush Gupta\nRakesh Das
     \n\n...and a little help from the fairies and elves</string>
+    <string name="title_activity_pronight">PronightActivity</string>
 </resources>

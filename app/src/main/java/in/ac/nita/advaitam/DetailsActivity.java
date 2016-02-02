@@ -51,7 +51,7 @@ public class DetailsActivity extends AppCompatActivity {
         titleView.setText(getIntent().getStringExtra("EVENT_TITLE"));
         Picasso.with(this)
                 .load(getIntent().getStringExtra("IMG_URL"))
-                .placeholder(R.drawable.placeholder)
+                .placeholder(R.drawable.advaitam)
                 .into(headerImage);
         detailView.setText(getIntent().getStringExtra("SMALL_DESC"));
         contactView.setText(getIntent().getStringExtra("CONTACT"));

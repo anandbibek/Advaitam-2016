@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
                 .putExtra("TITLE", "Workshops"));
     }
     public void openProNight(View view){
-        startActivity(new Intent(this, ListActivity.class)
+        startActivity(new Intent(this, PronightActivity.class)
                 .putExtra("TITLE", "Pro Night"));
     }
     public void openAbouts(View view){
