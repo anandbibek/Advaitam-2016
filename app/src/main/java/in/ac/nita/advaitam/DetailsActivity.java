@@ -41,7 +41,6 @@ public class DetailsActivity extends AppCompatActivity {
     private void initInstances() {
 
         rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
-
         headerImage = (ImageView)findViewById(R.id.headerImage);
         detailView = (TextView)findViewById(R.id.details);
         contactView = (TextView)findViewById(R.id.contact_details);

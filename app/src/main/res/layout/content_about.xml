@@ -54,72 +54,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="12dp">
+                <include layout="@layout/content_about_advaitam"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="vertical"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/details"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/about_advaitam_string"
-                            android:lineSpacingMultiplier="1.15"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                            android:fontFamily="sans-serif-light"
-                            android:autoLink="all"
-                            android:textColorLink="@color/colorAccent"
-                            android:layout_margin="12dp"/>
-
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="12dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="vertical"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Contact"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginRight="12dp"
-                            android:textSize="22dp" />
-
-                        <TextView
-                            android:id="@+id/contact_details"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="More details...."
-                            android:layout_margin="12dp" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.AppCompatButton
-                    android:id="@+id/link_button" style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent" android:layout_height="60dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Visit Website"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginRight="32dp"
-                    android:textColor="@android:color/white"
-                    android:fontFamily="sans-serif-light"
-                    app:backgroundTint="@color/colorAccent"
-                    />
+                <include layout="@layout/content_about_devs"/>
 
 
             </LinearLayout>
